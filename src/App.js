@@ -1,7 +1,22 @@
+import { useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+const URL = 'http://localhost:3001';
+
 function App() {
+  useEffect(() => {
+    console.log('here');
+    fetch(`${URL}/test1`);
+    fetch(`${URL}/test2`);
+    fetch(`${URL}/test3`);
+    fetch(`${URL}/test4`);
+    fetch(`${URL}/test5`);
+    fetch(`${URL}/test6`);
+    fetch(`${URL}/test7`);
+    fetch(`${URL}/test8`);
+  }, []);
+
   return (
     <div className="App">
       <header className="App-header">
